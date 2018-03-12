@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tech.anthonyquiroz.yoursize.MainActivity"
+    android:background="@drawable/gradient"
+    >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo2"
+            android:layout_marginTop="30sp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido!"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="36dp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="97dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="start"
+            android:text="@string/texto_altura"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+
+        <Spinner
+            android:id="@+id/sp_altura"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="50dp"
+            android:prompt="@string/titulo_opciones"
+            android:scrollbarSize="100sp"
+            android:spinnerMode="dialog"
+            android:textAlignment="center" />
+
+
+        <EditText
+            android:id="@+id/ET_Altura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="@string/texto_haltura"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="232dp" />
+
+        <TextView
+            android:id="@+id/tvAltura2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pulgadas (in)"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/ET_Altura2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="Ej: 4"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="232dp" />
+
+        <TextView
+            android:id="@+id/et_peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_peso"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sp_peso"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="50dp"
+            android:prompt="@string/titulo_opcionespeso"
+            android:scrollbarSize="100sp"
+            android:spinnerMode="dialog"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/ET_Peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/texto_hpeso"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#1149f1"
+            android:onClick="CalcularOnClick"
+            android:text="@string/boton_calcular"
+            android:textColorHint="@android:color/holo_green_dark"
+            android:textColorLink="@android:color/holo_green_dark"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <Button
+            android:id="@+id/button_TMB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_dark"
+            android:onClick="TMBOnClick"
+            android:text="@string/texto_calcularTMB"
+            android:textColor="@android:color/black"
+            tools:ignore="OnClick" />
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tech.anthonyquiroz.yoursize.TMBActivity"
+    android:background="@drawable/gradient"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvTMB"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="Calculadora TMB"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="40sp" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_sexo"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/sp_genero"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginLeft="50dp"
+            android:prompt="@string/titulo_genero"
+            android:spinnerMode="dialog"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tvEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_edad"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/ET_Edad"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:hint="Ej: 20"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Spinner
+            android:id="@+id/sp_actividad"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginLeft="50dp"
+            android:prompt="@string/titulo_actividad"
+            android:spinnerMode="dialog"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="CalcularIMBOnClick"
+            android:text="@string/boton_calcularTMB" />
+
+
+        <TextView
+            android:id="@+id/tv_titulo_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_resultadoTMB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+

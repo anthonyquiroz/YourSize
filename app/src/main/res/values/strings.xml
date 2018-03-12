@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">yourSize</string>
+    <string name="texto_peso">Peso</string>
+    <string name="texto_altura">Altura</string>
+    <string name="boton_calcular">Calcular IMC</string>
+    <string name="boton_volver">Volver</string>
+    <string name="texto_IMC">Su IMC es:</string>
+    <string name="texto_valor_IMC">0</string>
+    <string name="texto_hpeso">Ej: 50.2</string>
+    <string name="texto_haltura">Ej: 1.2</string>
+    <string name="texto_lista">Seleccione las medidas</string>
+    <string name="texto_calcularTMB">Calcular TMB</string>
+    <string name="texto_peso_bajo">Usted esta bajo peso</string>
+    <string name="texto_peso_normal">Usted esta en el peso ideal</string>
+    <string name="texto_peso_alto">Usted se encuentra sobrepeso</string>
+    <string name="texto_peso_obeso">Usted esta obeso </string>
+    <string name="texto_sexo">Seleccione su sexo </string>
+    <string name="texto_edad">Escriba su edad </string>
+    <string name="boton_calcularTMB"> Calcular TMB </string>
+
+
+
+
+
+    <string-array name="op_altura">
+        <item>  Metros(m)     </item>
+        <item>  Pies(in) </item>
+
+    </string-array>
+
+    <string-array name="op_peso">
+        <item>  Kilogramos(kg)     </item>
+        <item>  Libras(lb) </item>
+
+    </string-array>
+
+    <string-array name="op_genero">
+    <item>  Masculino     </item>
+    <item>  Femenino </item>
+    </string-array>
+
+    <string-array name="op_actividad">
+        <item>  Poco o ningun ejercicio     </item>
+        <item>  Ej. ligero (1-3 dias a la semana)</item>
+        <item>  Ej. moderado (3-5 dias a la semana)</item>
+        <item>  Ej. fuerte (6-7 dias a la semana)</item>
+        <item>  Ej. extremo (2 veces al dia)</item>
+
+
+    </string-array>
+
+    <string name="titulo_genero">  Seleccione su genero </string>
+    <string name="titulo_actividad">  Seleccione su nivel de actividad diaria </string>
+    <string name="titulo_opciones">  Seleccione la medida de altura </string>
+    <string name="titulo_opcionespeso">  Seleccione la medida de peso </string>
+
+
+</resources>
+
